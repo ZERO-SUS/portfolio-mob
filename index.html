@@ -632,19 +632,11 @@ if (typeof window !== "undefined") {
         
 
         
-        ;(function () {
-            if (!isBrowser) return
-
-            React.startTransition(() => {
-                ReactDOM.hydrateRoot(
-                    document.getElementById("__framer-badge-container"),
-                    React.createElement(React.Suspense, {}, React.createElement(React.lazy(() => import("__framer-badge"))))
-                )
-            })
-        })()
+        
     </script>
     <!-- Start of bodyEnd -->
     
     <!-- End of bodyEnd -->
 </body>
 </html>
+
